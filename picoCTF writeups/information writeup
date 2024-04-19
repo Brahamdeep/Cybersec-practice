@@ -1,10 +1,10 @@
-# picoCTF — information
+https://miro.medium.com/v2/resize:fit:828/format:webp/1*FlSGj_9mEwFtxc8wfBNySg.png# picoCTF — information
 
 The “Information” challenge on PicoCTF presents an intriguing exploration into the various ways information can be concealed within seemingly innocuous files, highlighting the complexity of data hiding techniques.
 
 The challenge is —
 
-![image](v2/resize:fit:828/format:webp/1*NreKiIKYfXRfLnh32leUCA.png)
+![image](
 
 We are provided with an image named “cat.jpg” as the challenge file.
 Initial Examination:
