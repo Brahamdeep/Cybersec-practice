@@ -1,0 +1,28 @@
+# picoCTF — information
+
+The “Information” challenge on PicoCTF presents an intriguing exploration into the various ways information can be concealed within seemingly innocuous files, highlighting the complexity of data hiding techniques.
+
+The challenge is —
+![image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*NreKiIKYfXRfLnh32leUCA.png)
+
+We are provided with an image named “cat.jpg” as the challenge file.
+Initial Examination:
+
+Download the “cat.jpg” image to inspect it more closely.
+Use commands like file, hexdump, and binwalk to verify that it is indeed a valid JPG image.
+![image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*FlSGj_9mEwFtxc8wfBNySg.png)
+Now we use exiftool to look at the metadata.
+
+We see an intresting string in the licence field upon examining the metadata, a peculiar string in the license field catches our attention. It appears non-standard for a typical license format.Given its character type and length, it hints at being base64 encoded.
+
+We can simply verify that by opening our terminal and run the command base64 -d, which will wait for us to input the text. After inserting the text, we simply hit ctrl+d to exit the interactive mode.
+
+A faster way to decode the string is toecho the copied text and pipe it to base64 -d, like this:
+
+echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d
+Which will prompt us the solution as:
+
+picoCTF{the_m3tadata_1s_modified}
+Thanks for reading,
+
+Brahamdeep Singh :D
