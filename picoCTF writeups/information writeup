@@ -3,14 +3,14 @@
 The “Information” challenge on PicoCTF presents an intriguing exploration into the various ways information can be concealed within seemingly innocuous files, highlighting the complexity of data hiding techniques.
 
 The challenge is —
-![image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*NreKiIKYfXRfLnh32leUCA.png)
+https://miro.medium.com/v2/resize:fit:828/format:webp/1*NreKiIKYfXRfLnh32leUCA.png
 
 We are provided with an image named “cat.jpg” as the challenge file.
 Initial Examination:
 
 Download the “cat.jpg” image to inspect it more closely.
 Use commands like file, hexdump, and binwalk to verify that it is indeed a valid JPG image.
-![image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*FlSGj_9mEwFtxc8wfBNySg.png)
+https://miro.medium.com/v2/resize:fit:828/format:webp/1*FlSGj_9mEwFtxc8wfBNySg.png
 Now we use exiftool to look at the metadata.
 
 We see an intresting string in the licence field upon examining the metadata, a peculiar string in the license field catches our attention. It appears non-standard for a typical license format.Given its character type and length, it hints at being base64 encoded.
