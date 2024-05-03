@@ -1,0 +1,7 @@
+Since we already have the encryption algorithm, we can reverse engineer a Python script to return the decrypted text- bruteforcing all 16 possible keys.
+
+The Flag!!
+ 
+Running the script above, we get 16 possible flags. However, only one seems plausible.
+
+=> picoCTF{et_tu?_431db62c5618cd75f1d0b83832b67b46}
